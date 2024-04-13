@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'variables/global';
+@import 'themes/light';
+@import 'themes/dark';
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+
+  src: local(Montserrat),
+    url('src/shared/assets/fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('src/shared/assets/fonts/Montserrat-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: bold;
+  font-weight: 600;
+
+  src: local(Montserrat),
+    url('src/shared/assets/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('src/shared/assets/fonts/Montserrat-SemiBold.woff') format('woff');
+}
+
+body {
+  font: var(--font-m);
+  color: var(--primary-color);
+  background: var(--bg-color);
+}
